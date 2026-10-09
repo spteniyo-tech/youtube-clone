@@ -1,0 +1,210 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  min-height: 100vh;
+}
+
+.youtube {
+  display: flex;
+  width: 100%;
+  max-width: 1260px;
+  justify-content: space-between;
+}
+
+.leftside {
+    position: fixed;
+  width: 240px; 
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+.logobox {
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 12px;
+  gap: 10px;
+  align-items: center;
+  color: red;
+}
+
+#ty {
+  color: white;
+}
+
+#fah {
+  color: white;
+}
+
+sub {
+  font-size: 0.65em;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 8px 12px;
+  gap: 20px;
+}
+
+/* BOTH DIVIDERS NOW MATCH EXACTLY */
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #3f3f3f;
+  margin: 12px 0;
+  width: 100%; /* Spans full width of sidebar container */
+}
+
+.signintext {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.signin-btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 8px;
+  background-color: transparent;
+  color: #3ea6ff;
+  border: 1px solid #3f3f3f;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.signin-btn i {
+  font-size: 20px;
+  color: #3ea6ff;
+}
+
+.signin-btn:hover {
+  background-color: #263850;
+  border-color: transparent;
+}
+
+.nav-item {
+    border-radius: 10px; 
+    transition: background-color 0.2s ease;
+}
+
+.nav-item:hover {
+    background-color: #272727; 
+}
+.copyright{
+    font-size: 14px;
+  line-height: 1.4;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 9px;
+}
+.list{
+   font-size: 14px;
+  line-height: 1.4;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 12px;
+}
+.iu{
+    padding: 0 12px;
+    color:rgb(88, 85, 79);
+}
+.yt-search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #303030; /* Subtle outer border */
+  overflow: hidden; /* Ensures the rounded pill shape clips internal elements */
+  background-color: #121212;
+}
+
+/* Focus effect on the container when typing */
+.yt-search-container:focus-within {
+  border-color: #1c62b9; /* YouTube active search border glow */
+}
+
+/* Input Area Wrapper */
+.input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+  background-color: #121212; /* Dark input background */
+}
+
+/* Input Field */
+.yt-search-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Placeholder Styling */
+.yt-search-container input::placeholder {
+  color: #aaaaaa;
+}
+
+/* Search Button (Right Side Box) */
+.search-btn {
+  width: 64px;
+  height: 100%;
+  background-color: #222222; /* Slightly lighter gray for the button */
+  border: none;
+  border-left: 1px solid #303030; /* Divider line */
+  color: #f1f1f1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover state for search button */
+.search-btn:hover {
+  background-color: #272727;
+}
+
+.search-btn:active {
+  background-color: #383838;
+}
