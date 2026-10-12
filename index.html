@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="intro2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="youtube">
+      <!-- SIDEBAR -->
+      <aside class="leftside">
+        <div class="navcontainer">
+          <div class="logobox">
+            <i class="bi bi-list" id="fah"></i>
+            <i class="bi bi-youtube"></i>
+            <span id="ty">YouTube<sup>NG</sup></span>
+          </div>
+          <div class="nav-links">
+            <a href="#" class="nav-item active"
+              ><i class="bi bi-house-fill"></i><span>Home</span></a
+            >
+            <a href="#" class="nav-item"
+              ><i class="bi bi-file-play-fill"></i><span>Shorts</span></a
+            >
+            <a href="#" class="nav-item"
+              ><i class="bi bi-layers"></i><span>Subscriptions</span></a
+            >
+            <a href="#" class="nav-item"
+              ><i class="bi bi-person-circle"></i><span>You</span></a
+            >
+            <a href="#" class="nav-item"
+              ><i class="bi bi-arrow-counterclockwise"></i
+              ><span>History</span></a
+            >
+
+            <hr class="divider" />
+
+            <div class="signintext">
+              <p>Sign in to like videos, comment, and subscribe.</p>
+              <button class="signin-btn">
+                <i class="bi bi-person-circle"></i>
+                <span>Sign in</span>
+              </button>
+            </div>
+
+            <hr class="divider" />
+          </div>
+        </div>
+
+        <div class="exploreline">
+          <h4>Explore</h4>
+          <div class="nav-links">
+            <a href="#" class="nav-item"
+              ><i class="bi bi-music-note"></i><span>Music</span></a
+            >
+            <a href="#" class="nav-item"
+              ><i class="bi bi-controller"></i><span>Gaming</span></a
+            >
+            <a href="#" class="nav-item"
+              ><i class="bi bi-newspaper"></i><span>News</span></a
+            >
+            <a href="#" class="nav-item"
+              ><i class="bi bi-arrow-down-short"></i><span>Show more</span></a
+            >
+            <hr class="divider" />
+
+            <div class="morefromyoutube">
+              <h4>More from YouTube</h4>
+              <div class="nav-links">
+                <a href="#" class="nav-item"
+                  ><i class="bi bi-youtube"></i><span>YouTube Premium</span></a
+                >
+                <a href="#" class="nav-item"
+                  ><i class="bi bi-youtube"></i><span>YouTube Music</span></a
+                >
+                <a href="#" class="nav-item"
+                  ><i class="bi bi-youtube"></i><span>YouTube Kids</span></a
+                >
+              </div>
+              <hr class="divider" />
+
+              <div class="report">
+                <div class="nav-links">
+                  <a href="#" class="nav-item"
+                    ><i class="bi bi-flag"></i><span>Report history</span></a
+                  >
+                </div>
+                <hr class="divider" />
+
+                <div class="copyright">
+                  <p>
+                    About Press Copyright Contact us Creators Advertise
+                    Developers
+                  </p>
+                </div>
+                <div class="list">
+                  <span>Terms Privacy</span>
+                  <span>Policy & Safety</span>
+                  <span>How YouTube works</span>
+                  <span>Test new features</span>
+                </div>
+                <h6>© 2026 Google LLC</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="center">
+        <!-- TOP SEARCH BAR -->
+        <div class="search-bar">
+          <form class="yt-search-container" action="/search" method="GET">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="search_query"
+                placeholder="Search"
+                autocomplete="off"
+              />
+            </div>
+            <button type="submit" class="search-btn" title="Search">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- VIDEO GRID (ALL CARDS GO INSIDE HERE) -->
+        <div class="video-grid">
+          <!-- Card 1 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2zDwH2wjndgnV1phnlofQFQOgLS8X6RiuBDmAH4UR2g&s=10"
+                alt="Video Thumbnail"
+              />
+              <span class="duration">13:04</span>
+            </div>
+            <div class="video-details">
+              <img
+                class="channel-avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HFhHgpQRnn0_ztQNhlK6veX-3LzBRvz-nH5E-dQYyg&s"
+                alt="Channel Avatar"
+              />
+              <div class="video-meta">
+                <h3>I MOUNTED the RAREST PET IN STEAL AN EGG</h3>
+                <p class="channel-name">Bemmy</p>
+                <p class="video-stats">157K views • 1d ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCe5NrFw-V1axpOxhMSlnF3SYdtpetpnoUlEG35CkSgw&s=10"
+                alt="Video Thumbnail"
+              />
+              <span class="duration">11:56</span>
+            </div>
+            <div class="video-details">
+              <img
+                class="channel-avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HFhHgpQRnn0_ztQNhlK6veX-3LzBRvz-nH5E-dQYyg&s"
+                alt="Channel Avatar"
+              />
+              <div class="video-meta">
+                <h3>Working in Fast Food..</h3>
+                <p class="channel-name">Neb</p>
+                <p class="video-stats">233K views • 1y ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWKu-4aaF05kAAnELp8h5pdbRhvIsH68PiIuu42-NIg&s=10"
+                alt="Video Thumbnail"
+              />
+              <span class="duration">2:53</span>
+            </div>
+            <div class="video-details">
+              <img
+                class="channel-avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HFhHgpQRnn0_ztQNhlK6veX-3LzBRvz-nH5E-dQYyg&s"
+                alt="Channel Avatar"
+              />
+              <div class="video-meta">
+                <h3>Speed-Rating "Fragrance Hacks"</h3>
+                <p class="channel-name">Scented Visuals</p>
+                <p class="video-stats">747K views • 9mo ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW4BOcTgaU-lyiDO5b4graS1-zBFzADmkR0-IGDy22Lg&s=10s"
+                alt="Video Thumbnail"
+              />
+              <span class="duration">3:13</span>
+            </div>
+            <div class="video-details">
+              <img
+                class="channel-avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HFhHgpQRnn0_ztQNhlK6veX-3LzBRvz-nH5E-dQYyg&s"
+                alt="Channel Avatar"
+              />
+              <div class="video-meta">
+                <h3>FC BARCELONA 3 vs 0 GETAFE</h3>
+                <p class="channel-name">Sports HD</p>
+                <p class="video-stats">1.2M views • 2d ago</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QQUb1GC95OZk5v-qemGjGX2xAeB1es79bXOl9hP7ww&s=10"
+              />
+              <span class="duration">37:13</span>
+            </div>
+            <div class="video-details">
+              <img
+                class="channel-avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HFhHgpQRnn0_ztQNhlK6veX-3LzBRvz-nH5E-dQYyg&s"
+                alt="Channel Avatar"
+              />
+              <div class="video-meta">
+                <h3>
+                  Reborn as the Weakest Goblin, He Steals Enemy Powers and
+                  Evolves Into the Strongest Monster
+                </h3>
+                <p class="channel-name">Ani cap</p>
+                <p class="video-stats">2.2M views • 2d ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo02l5vmNhh87_98zA54cTxkGyaxlyUgnMC2Clw7Sotw&s=10"
+                alt="Video Thumbnail"
+              />
+              <span class="duration">37:13</span>
+            </div>
+            <div class="video-details">
+              <img
+                class="channel-avatar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HFhHgpQRnn0_ztQNhlK6veX-3LzBRvz-nH5E-dQYyg&s"
+                alt="Channel Avatar"
+              />
+              <div class="video-meta">
+                <h3>
+                  fall cozy reset vlog | back in routine + home decor + fall
+                  nails
+                </h3>
+                <p class="channel-name">Fatima Bah</p>
+                <p class="video-stats">1.2M views • 2d ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="rightside">
+        <div class="signintext">
+          
+          <button class="signin-btn">
+            
+            <i class="bi bi-person-circle"></i>
+            <span>Sign in</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
